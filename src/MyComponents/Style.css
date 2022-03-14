@@ -1,0 +1,333 @@
+/* .logo{
+    width: 7rem;   
+     height: auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.host{
+    display: flex;
+    flex-direction: row;
+}
+.login{
+    display: flex;
+    flex-direction: row
+
+}
+label{
+    display: block;
+    margin-right: 7rem;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    margin-left: 13rem;
+    gap: 5rem;
+    border: 1px solid black;
+    width: 60vw;
+    height: 5rem;
+    padding: 2rem;
+
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+input{
+    border: none;
+    outline-style: none;
+    outline-width: 10px;
+} */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    top:0;
+    z-index: 100;
+    width: 100%;
+}
+.logo{
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+}
+.headercenter{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: fit-content;
+    padding: 10px;
+    border: 1px solid lightgreen;
+    border-radius: 999px;
+}
+.headercenter>input{
+    border: none;
+    padding: 10px;
+    outline-style: none;
+}
+.headerright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 88px;
+}
+.banner{
+    background: url('https://images.unsplash.com/photo-1533551037358-c8f7182cdb79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') center center ;background-repeat : no-repeat;  background-size : 100% ;background-size: cover;
+    
+    height:fit-content;
+    width: 100vw;
+    position: relative;
+}
+.banner_info{
+    /* background-color: black; */
+    color: white;
+     padding-top: 25vh;
+    
+    width: 100vw;
+    height: 380px;
+    /* margin-left: 366px; */
+    text-align: center;
+    justify-content: center;
+    
+}
+.banner_search{
+    display: flex;
+    flex-direction: column;
+}
+.banner_search button{
+    background-color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    color: #ff7779 !important;
+}
+.banner_info button{
+    background-color: #ff7779;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.banner_info button:hover{
+    background-color: white;
+    color: #ff7779;
+}
+.banner_info h5{
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.homesection{
+    display: flex;
+    padding: 30px;
+}
+.card{
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0 , 0 ,0 ,75);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+
+}
+.card:hover{
+    transform:scale(1.07)
+}
+.card img{
+    object-fit: fill;
+    min-width: 300px;
+    min-height: 200px;
+    width: 100%;
+}
+.card_info{
+margin-top: -9px;
+border-radius: 10px;
+padding: 20px;
+padding-top: 20px;
+border: 1;
+}
+.card_info h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card_info h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+
+}
+.search{
+    position: absolute;
+    
+}
+.searchpage_info{
+    padding: 20px;
+}
+.searchpage_info p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.searchpage_info h1{
+    margin-bottom: 30px;
+}
+.searchpage_info Button{
+    border-radius: 30px;
+    text-transform: inherit;
+    margin: 5px;
+}
+.searchresult{
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+.searchresult:hover{
+    opacity: 0.8;
+
+}
+.searchresult img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.searchresult_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-left: 20px; */
+
+}
+.searchresult_heart{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.searchresult_infotop{
+    width: 39vw;
+}
+.searchresult_infotop h3{
+    font-weight: 400;
+    margin-top: 10px;
+}
+.searchresult_infotop p{
+    font-size: 13px;
+    color: gray;
+    margin: 10px;
+    font-weight: 500;
+}
+.searchresult_infobottom{
+    display: flex;
+    justify-content: space-between;
+}
+.searchresult_star{
+    color: red;
+}
+.searchresult_stars{
+    display: flex;
+    align-items: center;
+}
+.searchresult_price p{
+text-align: right;
+}
+.searchresult_price{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.footer{
+    border-top: 1px solid lightgrey;
+    padding: 20px;
+    background-color: #f7f7f7;
+    align-items: center;
+}
+.footer p{
+    padding: 5px;
+    font-size: 14px;
+}
+/* .search{
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    width: 100vw;
+}
+.search h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 559px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 380px;
+
+}
+.search input{
+    width: 539px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 420px;
+    border: none;
+}
+.search input:focus{
+    outline-width: 0;
+}
+.search button{
+    position: absolute;
+    left: 0;
+    top: 480px;
+    text-transform: inherit !important;
+    background-color: #ff7779;
+    color: white;
+    width: 579px;
+}
+.search button:hover{
+    background-color: white;
+    color: #ff7779;
+} */
+.search{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+}
+.search h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 547px;
+    padding: 15px;
+    background-color: white;
+    /* flex-direction: column; */
+   
+    /* margin-left: 19.5%; */
+}
+.search input{
+    /* width: 547px;
+    padding: 10px; */
+    border: none;
+   
+}
+.serach input:focus{
+    outline-width: 0;
+}
+/* .search button{
+    background-color: #ff7779;
+    color: white;
+    text-transform: inherit !important;
+   
+} */
